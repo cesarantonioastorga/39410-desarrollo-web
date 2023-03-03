@@ -7,27 +7,92 @@
     <title>Document</title>
   </head>
   <body>
-    <!--encabezado-->
-    <header>
 
+    <!--encabezado-->
+    <header id="header">
+      <div>
+        <img src="img/logo.png" alt="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/productos.html">Productos</a> 
+            <ul>
+              <li><a href="#">Computadoras</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">Accesorios</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/ofertas.html">Ofertas</a> </li>
+          <li><a href="pages/carrito.html">Carrito</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--conteindo principal-->
     <main>
       <!--productos en oferta-->
       <section>
+        <div></div>
 
+        <!--Tabla de productos-->
+        <h2>Tabla</h2>
+        <table border="1px" cellpadding="10px" cellspacing="10px">
+          <thead>
+            <tr>
+              <th>Marca</th>
+              <th>Modelo</th>
+              <th>Procesador</th>
+              <th>Tarjeta gráfica</th>
+              <th>RAM</th>
+              <th>Precio</th>
+              <th>Imagen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ASUS</td>
+              <td>ROG Strix G15</td>
+              <td>Intel Core i7-10750H</td>
+              <td>NVIDIA GeForce RTX 3070</td>
+              <td>16GB DDR4</td>
+              <td>$1,699.99</td>
+              <td><img src="https://http2.mlstatic.com/D_NQ_NP_857380-MLA51218942720_082022-V.jpg" alt="ASUS ROG Strix G15"></td>
+            </tr>
+            <tr>
+              <td>Alienware</td>
+              <td>Aurora R12</td>
+              <td>Intel Core i9-11900KF</td>
+              <td>NVIDIA GeForce RTX 3080</td>
+              <td>32GB DDR4</td>
+              <td>$3,199.99</td>
+              <td><img src="img/Alienware_Aurora_12.jpg" alt="Alienware Aurora R12"></td>
+            </tr>
+            <tr>
+              <td>MSI</td>
+              <td>GE75 Raider</td>
+              <td>Intel Core i7-10875H</td>
+              <td>NVIDIA GeForce RTX 3070</td>
+              <td>32GB DDR4</td>
+              <td>$2,099.99</td>
+              <td><img src="https://http2.mlstatic.com/D_NQ_NP_669999-MLA51324600829_082022-V.jpg" alt="MSI GE75 Raider"></td>
+            </tr>
+          </tbody>
+        </table>
+        
       </section>
     </main>
 
     <!--seccion destacados-->
     <section>
-
+      <!--Video Youtube-->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/l6vCUAz1cLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
 
     <!--categorías de productos-->
     <aside>
-
+      
     </aside>
 
     <!--pie de pagina-->
@@ -36,7 +101,10 @@
         <p></p>
       </div>
       <div>
-
+        <ol>
+          <li><a href="#header">Volver arriba</a></li>
+          <li><a href="#">Whatsapp</a></li>
+        </ol>
       </div>
     </footer>
   </body>

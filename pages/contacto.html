@@ -1,25 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--encabezado-->
     <header>
-
+      <div>
+        <img src="../img/logo.png" alt="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a> 
+            <ul>
+              <li><a href="#">Computadoras</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">Accesorios</a></li>
+            </ul>
+          </li>
+          <li><a href="ofertas.html">Ofertas</a> </li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--conteindo principal-->
     <main>
 
+      <!--Formulario-->
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Contacto</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <br>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" required>
+          <br>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+          <br>
+          <label for="motivo">Motivo del mensaje:</label>
+          <select id="motivo" name="motivo">
+            <option value="consulta">Consulta</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="problema">Problema</option>
+            <option value="otros">Otros</option>
+          </select>
+          <br>
+          <input type="submit" value="Enviar">
+        </fieldset>
+      </form>
+
+      <!--Google Maps-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.06038885924!2d-64.26438380807637!3d-31.39943416257677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1677805793660!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
 
     <!--pie de pagina-->
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
