@@ -1,0 +1,98 @@
+/*IMPORTAR FUENTES*/
+/*
+@font-face {
+    font-family: 'coolvetica';
+    src: url(../fonts/coolvetica.ttf);
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+
+/*ESTILOS GENERALES*/
+
+/*Reset Css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:rgb(240, 240, 240); 
+}
+
+/*HEADER*/
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    text-decoration:none;
+}
+
+
+/*BANNER*/
+#banner{
+    height: 85vh;
+    background-image: url('../img/fondo-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /*parallax*/
+    background-attachment: fixed;
+}
+
+
+/*MAIN*/
+#ofertas{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    /* 
+    color: rgba(255,0,0,0.1); 
+    color: rgb(255,0,0);
+    color: #7b71cd; 
+    */
+    /*
+    text-align: center;
+    text-transform: uppercase;
+    */
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+
+}
+
+.card ul {
+    color: darkgrey;
+
+    /* estilos de lista */
+    list-style-type: none;
+    list-style-type: square;
+    list-style-image: url(../img/comprobado.png);
+}
+
+.card ul li{
+    line-height: 1.5;
+}
+
+.card p {
+    text-decoration:line-through;
+}
+
+/*font*/
+.card h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-size: 1.5em;
+    /*
+    font-weight: 400;
+    font-style: italic;
+    */
+}
+
+
