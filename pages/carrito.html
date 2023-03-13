@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/estilos.css">
   </head>
   <body>
     <!--encabezado-->
@@ -31,9 +32,86 @@
     </header>
 
     <!--conteindo principal-->
-    <main></main>
+    <main class="main">
+      <section id="carrito">
+        <h1>Carrito</h1>
+        <div class="card contenedorProducto">
+          <img class="contenedorProducto__imagen" src="../img/ASUS_ROG_Strix_G15.jpg" alt="">
+          <div class="contenedorData">
+            <ul>
+              <li>Procesador: Intel Core i7-10750H</li>
+              <li>Tarjeta gráfica: NVIDIA GeForce RTX 3070</li>
+              <li>RAM: 16GB DDR4</li>
+            </ul>
+          </div>
+          <div class="contenedorPrice">
+            <h3>Oferta: $1,299.99</h3>
+          </div>
+          <div class="contenedorBotones">
+            <button class="contenedorBotones__eliminar">Eliminar</button>
+            <div>
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card contenedorProducto">
+          <img class="contenedorProducto__imagen" src="../img/Alienware_Aurora_R12.jpg" alt="">
+          <div class="contenedorData">
+            <ul>
+              <li>Procesador: Intel Core i9-11900KF</li>
+              <li>Tarjeta gráfica: NVIDIA GeForce RTX 3080</li>
+              <li>RAM: 16GB DDR4</li>
+            </ul>
+          </div>
+          <div class="contenedorPrice">
+            <h3>Oferta: $2,599.99</h3>
+          </div>
+          <div class="contenedorBotones">
+            <button class="contenedorBotones__eliminar">Eliminar</button>
+            <div>
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card contenedorProducto">
+          <img class="contenedorProducto__imagen" src="../img/MSI_GE75_Raider.jpg" alt="">
+          <div class="contenedorData">
+            <ul>
+              <li>Procesador: Intel Core i7-10875H</li>
+              <li>Tarjeta gráfica: NVIDIA GeForce RTX 3070</li>
+              <li>RAM: 32GB DDR4</li>
+            </ul>
+          </div>
+          <div class="contenedorPrice">
+            <h3>Oferta: $1,899.99</h3>
+          </div>
+          <div class="contenedorBotones">
+            <button class="contenedorBotones__eliminar">Eliminar</button>
+            <div>
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!--pie de pagina-->
-    <footer></footer>
+    <footer>
+      <div>
+        <p></p>
+      </div>
+      <div>
+        <ol>
+          <li><a href="#header">Volver arriba</a></li>
+          <li><a href="#">Whatsapp</a></li>
+        </ol>
+      </div>
+    </footer>
   </body>
 </html>
