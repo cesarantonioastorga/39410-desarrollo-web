@@ -8,11 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
 
 
-<<<<<<< HEAD
 /*********ESTILOS GENERALES***********/
-=======
-/*ESTILOS GENERALES*/
->>>>>>> 236603e4698b0b1aa8837d661d90165f8413d44e
 
 /*Reset Css*/
 *{
@@ -26,7 +22,6 @@ body {
     background-color:rgb(240, 240, 240); 
 }
 
-<<<<<<< HEAD
 h1{
     text-align: center;
 }
@@ -60,14 +55,10 @@ header div img {
     width: 100%;
 }
 
-=======
-/*HEADER*/
->>>>>>> 236603e4698b0b1aa8837d661d90165f8413d44e
 header nav ul{
     list-style-type: none;
 }
 
-<<<<<<< HEAD
 header nav ul li {
     display: inline-block;
     position: relative;
@@ -99,12 +90,6 @@ header nav ul li:hover ul {
 }
 
 
-=======
-header nav ul li a{
-    text-decoration:none;
-}
-
->>>>>>> 236603e4698b0b1aa8837d661d90165f8413d44e
 
 /*BANNER*/
 #banner{
@@ -120,7 +105,6 @@ header nav ul li a{
 
 
 /*MAIN*/
-<<<<<<< HEAD
 .main {
     margin-top: 100px;
 }
@@ -128,26 +112,10 @@ header nav ul li a{
     color: red;
     text-align: center;
     text-transform: uppercase;
-=======
-#ofertas{
-    color: red;
-    text-align: center;
-    text-transform: uppercase;
-    /* 
-    color: rgba(255,0,0,0.1); 
-    color: rgb(255,0,0);
-    color: #7b71cd; 
-    */
-    /*
-    text-align: center;
-    text-transform: uppercase;
-    */
->>>>>>> 236603e4698b0b1aa8837d661d90165f8413d44e
 }
 
 .card{
     background-color: rgb(255, 255, 255);
-<<<<<<< HEAD
     /* position: sticky;
     top: 30px; */
     
@@ -201,31 +169,10 @@ header nav ul li a{
 }
 
 #ofertas .card p {
-=======
-    font-size: 20px;
-
-}
-
-.card ul {
-    color: darkgrey;
-
-    /* estilos de lista */
-    list-style-type: none;
-    list-style-type: square;
-    list-style-image: url(../img/comprobado.png);
-}
-
-.card ul li{
-    line-height: 1.5;
-}
-
-.card p {
->>>>>>> 236603e4698b0b1aa8837d661d90165f8413d44e
     text-decoration:line-through;
 }
 
 /*font*/
-<<<<<<< HEAD
 #ofertas .card h3 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -279,16 +226,3 @@ footer ol li a {
     /* solucion */
     overflow: scroll;
 }
-=======
-.card h3 {
-    font-size: 24px;
-    font-size: 1.5rem;
-    font-size: 1.5em;
-    /*
-    font-weight: 400;
-    font-style: italic;
-    */
-}
-
-
->>>>>>> 236603e4698b0b1aa8837d661d90165f8413d44e
