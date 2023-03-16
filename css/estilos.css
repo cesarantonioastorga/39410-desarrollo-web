@@ -1,10 +1,5 @@
 /*IMPORTAR FUENTES*/
-/*
-@font-face {
-    font-family: 'coolvetica';
-    src: url(../fonts/coolvetica.ttf);
-}
-*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
 
 
@@ -28,8 +23,12 @@ h1{
 
 /*HEADER*/
 header{
-    padding: 5px 100px;
-    /* position: sticky; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 100px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -38,17 +37,16 @@ header{
 }
 
 
-header div,
+
 header nav{
-    display: inline-block;
-    vertical-align: middle;
+    /* display: inline-block; */
+    
+    display: flex;
+    justify-content: flex-end;
+
 }
 header div{
-    width: 15%;
-}
-header nav{
-    width: 81%;
-    text-align: right;
+    width: 200px;
 }
 
 header div img {
@@ -56,11 +54,15 @@ header div img {
 }
 
 header nav ul{
+
+    display: flex;
+
     list-style-type: none;
 }
 
 header nav ul li {
-    display: inline-block;
+    /* display: inline-block; */
+    margin-left: 10px;
     position: relative;
 }
 
@@ -77,7 +79,7 @@ header nav ul li ul {
     background-color: #2366a7;
     padding: 5px 10px;
     text-align: left;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 -20px;
     border-radius: 4px;
 }
 
@@ -88,8 +90,6 @@ header nav ul li ul li {
 header nav ul li:hover ul {
     display:block;
 }
-
-
 
 /*BANNER*/
 #banner{
@@ -112,43 +112,17 @@ header nav ul li:hover ul {
     color: red;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 50px;
+}
+
+#ofertas{
+    display: flex;
+    justify-content: center;
+
 }
 
 .card{
     background-color: rgb(255, 255, 255);
-    /* position: sticky;
-    top: 30px; */
-    
-}
-
-#ofertas{
-    margin: 0 100px;
-}
-
-.oferta{
-    width: 300px;
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 20px;
-}
-
-.oferta img{
-    width: 100%;
-}
-
-.oferta h2 {
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.oferta button{
-    background-color: #2366a7;
-    color: white;
-    padding: 5px 20px;
-    border: 1px solid #2366a7;
-    border-radius: 5px;
-    margin-bottom: 20px;
 }
 
 #ofertas .card ul {
@@ -178,9 +152,49 @@ header nav ul li:hover ul {
     margin-bottom: 20px;
 }
 
+.oferta{
+    width: 300px;
+    /* display: inline-block; */
+    
+    /* display: flex;
+    flex-direction: column; */
+
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.oferta img{
+    width: 100%;
+}
+
+.oferta h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.oferta button{
+    background-color: #2366a7;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid #2366a7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+
 /*FOOTER*/
 footer{
     background-color: black;
+    padding: 10px 100px;
+}
+footer ol {
+    /* display: flex;
+    justify-content: flex-end; */
+}
+footer ol li{
+    margin-left: 10px;
 }
 footer ol li a {
     color: white;
@@ -190,19 +204,36 @@ footer ol li a {
 
 /**********CARRITO DE COMPRAS*********/
 #carrito .contenedorProducto{
-    padding: 20px 10px;
-    width: 800px;
+    padding: 20px 50px;
+    width: 80%;
     margin: 10px auto;
+
+    /* display: flex;
+    justify-content: space-between; */
+
+}
+#carrito .contenedorProducto img{
+    width: 200px;
 }
 
 #carrito .contenedorData,
 #carrito .contenedorPrice,
 #carrito .contenedorBotones,
 #carrito .contenedorProducto img{
-    display: inline-block;
-    width: 190px;
-    vertical-align: middle;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    /* width: 190px; */
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
     padding: 0 10px;
+}
+
+#carrito .contenedorBotones button{
+    margin-bottom: 10px;
 }
 
 #carrito .contenedorBotones .contenedorBotones__eliminar {
@@ -211,18 +242,4 @@ footer ol li a {
     padding: 5px 15px;
     border: 1px solid rgb(219, 28, 28);
     border-radius: 5px;
-}
-
-.cssAwesome {
-    /* propiedades decorativas */
-    border: solid 1px black;
-    padding: 5px;
-    display: inline-block;
-    font-size: 32px;
-    font-family: Arial;
-     /* propiedades que hacen el "problema" */
-    width: 100px;
-    height: 110px;
-    /* solucion */
-    overflow: scroll;
 }
