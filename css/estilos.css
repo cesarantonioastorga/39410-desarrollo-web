@@ -21,6 +21,20 @@ h1{
     text-align: center;
 }
 
+.btn{
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+span{
+    font-weight: 800;
+}
+
 /*HEADER*/
 header{
 
@@ -32,11 +46,9 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: #2366a7;
 }
-
-
 
 header nav{
     /* display: inline-block; */
@@ -54,9 +66,7 @@ header div img {
 }
 
 header nav ul{
-
     display: flex;
-
     list-style-type: none;
 }
 
@@ -91,6 +101,66 @@ header nav ul li:hover ul {
     display:block;
 }
 
+/*INDEX*/
+
+.youtube{
+    margin-top: 120px;
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.youtube::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(58, 58, 58,.4);
+    width: 100%;
+    height: 600px;
+}
+.youtube h1{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 40%;
+    left: 12%;
+    z-index: 1;
+}
+
+#main-index{
+    margin: 50px;
+}
+
+/* .grid-index{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 20px;
+} */
+.grid-index{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 10px;
+    background-color: white;
+    padding: 30px 4.5%;
+}
+.grid-index div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid-index div p,
+.grid-index div h4,
+.grid-index img{
+    width: 13%;
+    text-align: center;
+}
+
+
+
 /*BANNER*/
 #banner{
     height: 85vh;
@@ -106,8 +176,10 @@ header nav ul li:hover ul {
 
 /*MAIN*/
 .main {
-    margin-top: 100px;
+    margin: 150px 0;
+    padding: 0 100px;
 }
+
 .ofertas{
     color: red;
     text-align: center;
@@ -123,6 +195,8 @@ header nav ul li:hover ul {
 
 .card{
     background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(206, 206, 206);
 }
 
 #ofertas .card ul {
@@ -190,8 +264,8 @@ footer{
     padding: 10px 100px;
 }
 footer ol {
-    /* display: flex;
-    justify-content: flex-end; */
+    display: flex;
+    justify-content: flex-end;
 }
 footer ol li{
     margin-left: 10px;
@@ -203,13 +277,33 @@ footer ol li a {
 
 
 /**********CARRITO DE COMPRAS*********/
+.carrito{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 50px 1fr 1fr;
+    grid-template-areas:
+    'titulo titulo titulo'
+    'carrito carrito precio'
+    'carrito carrito .';
+    justify-items: center;
+    padding: 0 100px;
+}
+
+.carrito h1{
+    grid-area: titulo;
+}
+
+#carrito{
+    width: 90%;
+    grid-area: carrito;
+}
+
 #carrito .contenedorProducto{
     padding: 20px 50px;
-    width: 80%;
     margin: 10px auto;
 
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
 
 }
 #carrito .contenedorProducto img{
@@ -224,10 +318,10 @@ footer ol li a {
     /* vertical-align: middle; */
     /* width: 190px; */
 
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 
     padding: 0 10px;
 }
@@ -238,8 +332,20 @@ footer ol li a {
 
 #carrito .contenedorBotones .contenedorBotones__eliminar {
     background-color: rgb(219, 28, 28);
-    color: white;
-    padding: 5px 15px;
     border: 1px solid rgb(219, 28, 28);
-    border-radius: 5px;
+}
+
+aside{
+    grid-area: precio;
+    width: 90%;
+    margin: 10px 0;
+}
+
+aside .card{
+    padding: 20px;
+}
+
+.pagar{
+    background-color: rgb(30, 173, 30);
+    border: 1px solid rgb(30, 173, 30);
 }

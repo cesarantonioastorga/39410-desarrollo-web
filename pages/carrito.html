@@ -6,16 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito</title>
     <link rel="stylesheet" href="../css/estilos.css">
-<<<<<<< HEAD
-=======
-    <!--
-    <style>
-      h1{
-        color: red;
-      }
-    </style>
-    -->
->>>>>>> 236603e4698b0b1aa8837d661d90165f8413d44e
   </head>
   <body>
     <!--encabezado-->
@@ -42,9 +32,9 @@
     </header>
 
     <!--conteindo principal-->
-    <main class="main">
+    <main class="main carrito">
+      <h1>Carrito</h1>
       <section id="carrito">
-        <h1>Carrito</h1>
         <div class="card contenedorProducto">
           <img class="contenedorProducto__imagen" src="../img/ASUS_ROG_Strix_G15.jpg" alt="">
           <div class="contenedorData">
@@ -58,7 +48,7 @@
             <h3>Oferta: $1,299.99</h3>
           </div>
           <div class="contenedorBotones">
-            <button class="contenedorBotones__eliminar">Eliminar</button>
+            <button class="contenedorBotones__eliminar btn">Eliminar</button>
             <div>
               <button>-</button>
               <span>1</span>
@@ -79,7 +69,7 @@
             <h3>Oferta: $2,599.99</h3>
           </div>
           <div class="contenedorBotones">
-            <button class="contenedorBotones__eliminar">Eliminar</button>
+            <button class="contenedorBotones__eliminar btn">Eliminar</button>
             <div>
               <button>-</button>
               <span>1</span>
@@ -100,7 +90,7 @@
             <h3>Oferta: $1,899.99</h3>
           </div>
           <div class="contenedorBotones">
-            <button class="contenedorBotones__eliminar">Eliminar</button>
+            <button class="contenedorBotones__eliminar btn">Eliminar</button>
             <div>
               <button>-</button>
               <span>1</span>
@@ -109,7 +99,22 @@
           </div>
         </div>
       </section>
+      
+      <!--Total carrito-->
+      <aside>
+        <div class="card">
+          <p>Cantidad productos: <span>3</span></p>
+          <p>Costo de envio: <span>$500.00</span></p>
+          <p>Subtotal: <span>$5,799.97</span></p>
+          <p>Total: <span>$6,299.97</span></p>
+          <hr>
+          <div>
+            <button class="btn pagar">Pagar</button>
+          </div>
+        </div>
+      </aside>
     </main>
+
 
     <!--pie de pagina-->
     <footer>
