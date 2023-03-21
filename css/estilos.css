@@ -35,6 +35,8 @@ span{
     font-weight: 800;
 }
 
+
+
 /*HEADER*/
 header{
 
@@ -348,4 +350,79 @@ aside .card{
 .pagar{
     background-color: rgb(30, 173, 30);
     border: 1px solid rgb(30, 173, 30);
+}
+
+@media (max-width: 576px){
+    header{
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    /*MENU HAMBURGUESA*/
+    header label{
+        width: 40%;
+        text-align: end;
+    }
+    header label i{
+        color: white;
+        font-size: 30px;
+    }
+    header nav{
+        /* display: none; */
+        transform: translateX(-576px);
+        transition: 1s;
+        position: absolute;
+        background-color: #2366a7;
+        justify-content: flex-start;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+    }
+    .inputMenu{
+        display: none;
+    }
+    .inputMenu:checked + nav {
+        transform: translateX(0);
+    }
+    .mainMenu{
+        display: block;
+    }
+    .mainMenu li a {
+        font-size: 20px;
+    }
+
+
+    /*CARRITO DE COMPRAS*/
+    
+    .carrito{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'titulo'
+        'carrito'
+        'precio';
+        grid-template-rows: 50px auto 1fr;
+        padding: 0;
+    }
+    #carrito .contenedorProducto{
+        flex-direction: column;
+        align-items: center;
+        height: 550px;
+    }
+    .main{
+        margin: 150px 0 50px;
+    }
+    footer{
+        padding: 20px;
+    }
+}
+@media (min-width: 576px){
+
+}
+@media (min-width: 768px){
+
+}
+@media (min-width: 991px) {
+
 }
