@@ -5,41 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos</title>
+
+    <!--CDN Bootstrap CSS y JS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!--Estilos CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
   </head>
   <body>
     <!--encabezado-->
-    <header>
-      <div>
-        <img src="../img/logo.png" alt="logo" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li>
-            <a href="productos.html">Productos</a>
-            <ul>
-              <li><a href="#">Computadoras</a></li>
-              <li><a href="#">Laptops</a></li>
-              <li><a href="#">Accesorios</a></li>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-transparent row">
+        <div class="container-fluid col-12">
+          <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="productos.html">Productos</a>
+                <ul>
+                  <li><a class="nav-link text-light" href="#">Computadoras</a></li>
+                  <li><a class="nav-link text-light" href="#">Laptops</a></li>
+                  <li><a class="nav-link text-light" href="#">Accesorios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="carrito.html">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-          </li>
-          <li><a href="ofertas.html">Ofertas</a></li>
-          <li><a href="carrito.html">Carrito</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
       </nav>
     </header>
 
     <!--conteindo principal-->
-    <main class="main">
-      <div class="cssAwesome">
-        CSS IS <strong>AWESOME</strong>
-      </div>
+    <main class="container my-5">
+      <section class="row py-5">
+        <div class="col-12 pt-5 d-flex justify-content-center justify-content-md-between flex-wrap">
+          <div class="card my-5" style="width: 18rem;">
+            <img src="../img/Alienware_Aurora_R12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Alienware Aurora R12</h4>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Procesador: Intel Core i9-11900KF</li>
+              <li class="list-group-item">Tarjeta gráfica: NVIDIA GeForce RTX 3080</li>
+              <li class="list-group-item">RAM: 16GB DDR4</li>
+            </ul>
+            <div class="card-body">
+              <p class="card-text">Precio: $3,199.99</p>
+              <p class="card-text">Oferta: $2,599.99</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+          <div class="card my-5" style="width: 18rem;">
+            <img src="../img/ASUS_ROG_Strix_G15.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">ASUS ROG Strix G15</h4>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Procesador: Intel Core i7-10750H</li>
+              <li class="list-group-item">Tarjeta gráfica: NVIDIA GeForce RTX 3070</li>
+              <li class="list-group-item">RAM: 16GB DDR4</li>
+            </ul>
+            <div class="card-body">
+              <p class="card-text">Precio: $1,699.99</p>
+              <p class="card-text">Oferta: $1,299.99</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+          <div class="card my-5" style="width: 18rem;">
+            <img src="../img/MSI_GE75_Raider.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">MSI GE75 Raider</h4>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Procesador: Intel Core i7-10875H</li>
+              <li class="list-group-item">Tarjeta gráfica: NVIDIA GeForce RTX 3070</li>
+              <li class="list-group-item">RAM: 32GB DDR4</li>
+            </ul>
+            <div class="card-body">
+              <p class="card-text">Precio: $2,099.99</p>
+              <p class="card-text">Oferta: $1,899.99</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--pie de pagina-->
-    <footer>
+    <footer class="container-fluid">
       <div>
         <p></p>
       </div>

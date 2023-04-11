@@ -38,12 +38,13 @@ span{
 
 
 /*HEADER*/
-header{
+.header{
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+}
+header{
     padding: 10px 100px;
     position: fixed;
     width: 100%;
@@ -63,8 +64,12 @@ header div{
     width: 200px;
 }
 
-header div img {
+.header div img {
     width: 100%;
+}
+
+header nav div a img {
+    width: 150px;
 }
 
 /*MENU HAMBURGUESA*/
@@ -361,22 +366,22 @@ aside .card{
 }
 
 @media (max-width: 576px){
-    header{
+    .header{
         flex-wrap: wrap;
         padding: 10px 20px;
     }
 
     /*MENU HAMBURGUESA*/
-    header label{
+    .header label{
         width: 40%;
         text-align: end;
         display: block;
     }
-    header label i{
+    .header label i{
         color: white;
         font-size: 30px;
     }
-    header nav{
+    .header nav{
         /* display: none; */
         transform: translateX(-576px);
         transition: 1s;
